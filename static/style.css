@@ -1,0 +1,60 @@
+body{
+    background-color:#C0E1D2;
+    font-family:Arial,sans-serif;
+}
+
+.navbar{
+    background-color:#E5EEE4;
+    padding:13px 16px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.calculator{
+    width:400px;
+    margin:40px auto;
+}
+
+.top-row{
+    display:flex;
+    gap:10px;
+    font-size:12px;
+    justify-content:center;
+}
+
+.top-row input,
+.top-row select{
+    padding:2px;
+    width:70px;
+    font-size:12px;
+}
+
+.top-row button{
+    padding:2px;
+    font-size:12px;
+    cursor:progress;
+}
+
+
+
+.result-box {
+    margin-top:16px;
+    display:flex;
+    padding-left:111px;
+}
+
+.result-box input {
+    width:100px;
+    padding:1px;
+    font-size:10px;
+}
+
+
+    
+
+
+
+

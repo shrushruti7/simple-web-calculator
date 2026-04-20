@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo"> Simple Calculator</div>
+</nav>
+
+<form class="calculator"action="{{url_for('calculate')}}" method="post">
+
+    <div class="top-row">
+        <input type="number" name="firstNumber" placeholder="First number" required>
+        <select name="operation" required>
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <input type="number" name="secondNumber" placeholder="Second number" required>
+        <button type="submit">calculate</button>
+        
+    </div>
+
+    <div class="result-box">
+      <input type="text" placeholder=" Result" value="{{result}}" >
+    </div>
+
+    
+
+</form>
+
+</body>
+</html>
